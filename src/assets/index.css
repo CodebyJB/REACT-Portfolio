@@ -1,0 +1,30 @@
+:root {
+  --very-light: #fcfbfb;
+  --light: #b4bbc4;
+  --medium: #a6a6a6;
+  --dark: #545454;
+  --very-dark: #393838;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  /* font-family: "Belleza", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", 
+      sans-serif;*/
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
