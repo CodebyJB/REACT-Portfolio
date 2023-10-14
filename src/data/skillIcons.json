@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "fa-brands fa-html5",
+    "name": "HTML"
+  },
+  {
+    "icon": "fa-brands fa-css3-alt",
+    "name": "CSS"
+  },
+  {
+    "icon": "fa-brands fa-js",
+    "name": "JavaScript"
+  },
+  {
+    "icon": "fa-brands fa-react",
+    "name": "React"
+  },
+  {
+    "icon": "fa-brands fa-bootstrap",
+    "name": "Bootstrap"
+  },
+  {
+    "icon": "../../public/images/css_tailwind.svg",
+    "name": "Tailwind CSS"
+  }
+]
