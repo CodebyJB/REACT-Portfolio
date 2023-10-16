@@ -1,4 +1,72 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* quicksand-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/quicksand-v31-latin-regular.woff2") format("woff2");
+}
+/* quicksand-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/quicksand-v31-latin-700.woff2") format("woff2");
+}
+
+/* kumbh-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/kumbh-sans-v20-latin-regular.woff2") format("woff2");
+}
+/* kumbh-sans-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/kumbh-sans-v20-latin-700.woff2") format("woff2");
+}
+
+/* krona-one-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/krona-one-v14-latin-regular.woff2") format("woff2");
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v36-latin-regular.woff2") format("woff2");
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v36-latin-700.woff2") format("woff2");
+}
+
+/* JB font */
+@font-face {
+  font-family: "JB font";
+  src: url("../fonts/jb-webfont.woff") format("woff"),
+    url("../fonts/jb-webfont.woff2") format("woff2");
+}
 
 :root {
   --very-light: #fcfbfb;
@@ -17,8 +85,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  /* font-family: "Belleza", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", 
-      sans-serif;*/
+  font-family: "Quicksand";
 }
 input,
 button,
@@ -30,4 +97,8 @@ img {
   display: block;
   max-width: 100%;
 }
-
+h1,
+h2,
+h3 {
+  font-family: "JB font";
+}

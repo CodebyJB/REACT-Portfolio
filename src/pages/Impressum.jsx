@@ -1,9 +1,12 @@
+import BackButton from "../components/BackButton";
+
 function Impressum() {
-    return (
-        <div>
-           Impressum 
-        </div>
-    )
+  return (
+    <div>
+      Impressum
+      <BackButton />
+    </div>
+  );
 }
 
-export default Impressum
+export default Impressum;

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
 function ProjectItem({ project }) {
-  const { image, alt, title } = project;
+  const { image, alt, title, id } = project;
 
   return (
     <li>
-      <Link to={`/project:${title}`}>
+      <Link to={`/projects/${id}`}>
         ProjectItem
         <figure>
           <img src={image} alt={alt} />

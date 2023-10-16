@@ -1,32 +1,35 @@
 [
   {
-    "image": "src:'img'",
+    "image": "src:img",
     "alt": "Preview Underwater Memories",
     "title": "Underwater Memories",
     "category": "Productivity",
     "tool": "HTML, CSS, React",
     "codeLink": "https://",
     "demoLink": "https://",
-    "description": "Description Underwater Memories"
+    "description": "Description Underwater Memories",
+    "id": "001"
   },
   {
-    "image": "src:'img'",
+    "image": "src:img",
     "alt": "Preview Portfolio Website",
     "title": "Portfolio Website",
     "category": "Personal Branding",
     "tool": "HTML, CSS, React, Bootstrap",
     "codeLink": "https://",
     "demoLink": "https://",
-    "description": "Description Portfolio Website"
+    "description": "Description Portfolio Website",
+    "id": "002"
   },
   {
-    "image": "src:'img'",
+    "image": "src:img",
     "alt": "Preview e-commerce",
     "title": "Shop",
     "category": "e-commerce",
     "tool": "HTML, CSS, React, Tailwind",
     "codeLink": "https://",
     "demoLink": "https://",
-    "description": "Description e-commerce"
+    "description": "Description e-commerce",
+    "id": "003"
   }
 ]
