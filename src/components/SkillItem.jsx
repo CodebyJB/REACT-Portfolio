@@ -1,24 +1,19 @@
-import propTypes from "prop-types";
-
 function SkillItem({ skill }) {
   const { icon, name } = skill;
 
-  const isImage = !icon.startsWith("fa");
+  const isSvg = icon.endsWith("svg");
 
   return (
-    <div>
-      <li>
-        {isImage ? <img src={icon} alt={name} /> : <i className={icon}></i>}
-      </li>
-    </div>
+    <li>
+      {isSvg ? (
+        <img src={icon} alt={name} className="svg" />
+      ) : (
+        <i className={icon}></i>
+      )}
+      <span>{name}</span>
+    </li>
   );
 }
 
-SkillItem.propTypes = {
-  skill: propTypes.shape({
-    icon: propTypes.string.isRequired,
-    name: propTypes.string.isRequired,
-  }).isRequired,
-};
-
 export default SkillItem;
+

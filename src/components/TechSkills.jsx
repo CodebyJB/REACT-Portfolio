@@ -6,7 +6,15 @@ function TechSkills() {
   return (
     <div className="vh-100">
       TechSkills
-      <ul>
+      <div className="d-flex">
+        <h2>Mein Tech-Stack</h2>
+        <span className="dots">...</span>
+      </div>
+      <div className="d-flex">
+        <h2>Technologien im Einsatz</h2>
+        <span className="dots1">...</span>
+      </div>
+      <ul className="d-flex list-unstyled">
         {skillIcons.map((skill) => (
           <SkillItem skill={skill} key={skill.name} />
         ))}

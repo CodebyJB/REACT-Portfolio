@@ -16,11 +16,32 @@
     "name": "React"
   },
   {
+    "icon": "images/react-router.svg",
+    "name": "React Router"
+  },
+  {
+    "icon": "images/redux.svg",
+    "name": "React Redux"
+  },
+  {
     "icon": "fa-brands fa-bootstrap",
     "name": "Bootstrap"
   },
   {
-    "icon": "../../public/images/css_tailwind.svg",
+    "icon": "images/css_tailwind.svg",
     "name": "Tailwind CSS"
+  },
+  {
+    "icon": "fa-brands fa-git-alt",
+    "name": "Git"
+  },
+  {
+    "icon": "fa-brands fa-github",
+    "name": "Github"
+  },
+
+  {
+    "icon": "fa-brands fa-npm",
+    "name": "npm"
   }
 ]
