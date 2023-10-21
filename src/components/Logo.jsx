@@ -1,13 +1,15 @@
-import { Link } from "react-router-dom";
+import { scrollToSection } from "../utils/scrollToSection";
 
 function Logo() {
   return (
-    <div>
+    <figure
+      onClick={() => {
+        scrollToSection("hero");
+      }}
+    >
       Logo
-      <Link to="/">
-        <img src="../img/Logo.png" alt="Logo"></img>
-      </Link>
-    </div>
+      <img src="../img/Logo.png" alt="Logo" />
+    </figure>
   );
 }
 

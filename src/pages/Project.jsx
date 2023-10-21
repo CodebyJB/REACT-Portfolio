@@ -3,10 +3,10 @@ import projects from "../data/projects.json";
 import BackButton from "../components/BackButton";
 
 function Project() {
-  const { projectId } = useParams();
+  const { projectTitle } = useParams();
   const navigate = useNavigate();
 
-  const project = projects.find((p) => p.id === projectId);
+  const project = projects.find((p) => p.title === projectTitle);
 
   if (!project) {
     navigate("*");

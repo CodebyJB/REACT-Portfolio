@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 function BackButton() {
   const navigate = useNavigate();
-  
+
   return (
     <button
       onClick={(e) => {
@@ -10,7 +10,7 @@ function BackButton() {
         navigate(-1);
       }}
     >
-      Back
+      <i className="fa-solid fa-arrow-left"></i> Back
     </button>
   );
 }

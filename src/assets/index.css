@@ -69,8 +69,8 @@
 }
 
 :root {
-  --very-light: #fcfbfb;
-  --light: #b4bbc4;
+  --accent1: #b4bbc4;
+  --light: #fcfbfb;
   --medium: #a6a6a6;
   --dark: #545454;
   --very-dark: #393838;
@@ -127,5 +127,24 @@ h3 {
 @keyframes d1 {
   to {
     clip-path: inset(0 -34% 0 0);
+  }
+}
+
+/* StartPage */
+.startpage {
+  background: linear-gradient(
+    90deg,
+    var(--medium) 0%,
+    var(--dark) 50%,
+    var(--very-dark) 100%
+  );
+  transition: 2s linear;
+}
+.spinner {
+  animation: s1 5s infinite linear;
+}
+@keyframes s1 {
+  to {
+    transform: rotate(1turn);
   }
 }

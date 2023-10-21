@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/dsvgo" element={<Datenschutz />} />
-          <Route path="/projects/:projectId" element={<Project />} />
+          <Route path="/projects/:projectTitle" element={<Project />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
