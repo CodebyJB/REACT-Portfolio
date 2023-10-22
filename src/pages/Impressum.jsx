@@ -3,9 +3,11 @@ import impressumData from "../data/impressumData.json";
 
 function Impressum() {
   return (
-    <div>
-      Impressum
-      <div dangerouslySetInnerHTML={{ __html: impressumData.content }} />
+    <div className="col-sm-10 p-4 mx-auto">
+      <div
+        dangerouslySetInnerHTML={{ __html: impressumData.content }}
+        className="text-justify"
+      />
       <BackButton />
     </div>
   );

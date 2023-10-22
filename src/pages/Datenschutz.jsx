@@ -3,9 +3,11 @@ import dsvgoData from "../data/dsvgoData.json";
 
 function Datenschutz() {
   return (
-    <div>
-      Datenschutz
-      <div dangerouslySetInnerHTML={{ __html: dsvgoData.content }} />
+    <div className="col-sm-10 p-4 mx-auto">
+      <div
+        dangerouslySetInnerHTML={{ __html: dsvgoData.content }}
+        className="text-justify"
+      />
       <BackButton />
     </div>
   );

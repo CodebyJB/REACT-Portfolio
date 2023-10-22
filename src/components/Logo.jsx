@@ -7,8 +7,11 @@ function Logo() {
         scrollToSection("hero");
       }}
     >
-      Logo
-      <img src="../img/Logo.png" alt="Logo" />
+      <img
+        src="images/Logo_transparentBg.png"
+        alt="Logo"
+        className="w-25 p-2"
+      />
     </figure>
   );
 }

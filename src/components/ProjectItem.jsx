@@ -6,7 +6,6 @@ function ProjectItem({ project }) {
   return (
     <li>
       <Link to={`/projects/${title}`}>
-        ProjectItem
         <figure>
           <img src={image} alt={alt} />
         </figure>
