@@ -3,9 +3,9 @@ import projects from "../data/projects.json";
 
 function ProjectList() {
   return (
-    <div className="projectlist p-5" id="projects">
+    <div className="projectlist vh-100" id="projects">
       <h2>My Projects</h2>
-      <ul className="d-flex flex-column flex-md-row px-0 gap-2 mx-auto">
+      <ul className="px-0 d-flex flex-column flex-md-row justify-content-center">
         {projects.map((project) => (
           <ProjectItem project={project} key={project.id} />
         ))}

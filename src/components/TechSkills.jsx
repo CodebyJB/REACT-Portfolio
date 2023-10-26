@@ -14,7 +14,7 @@ function TechSkills() {
         <h2>Technologien im Einsatz</h2>
         <span className="dots1">...</span>
       </div>
-      <ul className="d-flex list-unstyled">
+      <ul className="d-flex flex-wrap  list-unstyled">
         {skillIcons.map((skill) => (
           <SkillItem skill={skill} key={skill.name} />
         ))}

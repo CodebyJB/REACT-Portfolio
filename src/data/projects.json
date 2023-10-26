@@ -1,6 +1,6 @@
 [
   {
-    "image": "src:img",
+    "image": "images/Screenshot_Portfolio.png",
     "alt": "Preview Underwater Memories",
     "title": "Underwater Memories",
     "category": "Productivity",
@@ -11,7 +11,7 @@
     "id": "001"
   },
   {
-    "image": "src:img",
+    "image": "images/Screenshot_Portfolio.png",
     "alt": "Preview Portfolio Website",
     "title": "Portfolio Website",
     "category": "Personal Branding",
@@ -22,7 +22,7 @@
     "id": "002"
   },
   {
-    "image": "src:img",
+    "image": "images/Screenshot_Portfolio.png",
     "alt": "Preview e-commerce",
     "title": "Shop",
     "category": "e-commerce",
