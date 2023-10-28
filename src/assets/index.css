@@ -74,6 +74,14 @@
   --medium: #a6a6a6;
   --dark: #545454;
   --very-dark: #393838;
+  --dark-primary: #7b1fa2;
+  --light-primary: #e1bee7;
+  --primary: #9c27b0;
+  --light-text: #ffffff;
+  --secondary-text: #757575;
+  --primary-text: #212121;
+  --light-secondary: #bdbdbd;
+  --dark-secondary: #9e9e9e;
 }
 
 * {
@@ -107,7 +115,7 @@ h3 {
 .dots {
   font-weight: bold;
   font-family: monospace;
-  /* font-size: 30px; */
+  font-size: 30px;
   clip-path: inset(0 3ch 0 0);
   animation: dots 1s steps(4) infinite;
 }
@@ -156,15 +164,15 @@ h3 {
 
 /* ProjectList & ProjectItem */
 .projectitem {
-  width: 350px;
+  width: 400px;
 }
-.projectitem:first-of-type {
+.p001 {
   background: linear-gradient(90deg, var(--light) 0%, var(--medium) 50%);
 }
-.projectitem:nth-of-type(2) {
+.p002 {
   background: linear-gradient(90deg, var(--medium) 0%, var(--dark) 50%);
 }
-.projectitem:last-of-type {
+.p003 {
   background: linear-gradient(90deg, var(--dark) 0%, var(--very-dark) 50%);
 }
 .projectitem .wrapper_img {
@@ -176,10 +184,28 @@ h3 {
 .title_block {
   opacity: 0;
 }
-.projectitem:hover .title_block {
+.projectlist .projectitem:hover .title_block {
   opacity: 1;
 }
-.projectitem:hover {
+.projectlist .projectitem:hover {
   transform: scale(0.95);
   filter: grayscale(2);
+}
+
+/* Project */
+.project .projectitem {
+  width: 600px;
+}
+
+/* TeckSkills */
+.skill_item figure {
+  max-height: 48px;
+  max-width: 48px;
+}
+.skill_item img {
+  height: 48px;
+  width: 48px;
+}
+.skill_item i {
+  font-size: 48px;
 }

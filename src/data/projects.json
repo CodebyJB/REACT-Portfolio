@@ -1,6 +1,6 @@
 [
   {
-    "image": "images/Screenshot_Portfolio.png",
+    "image": "../images/Screenshot_Portfolio.png",
     "alt": "Preview Underwater Memories",
     "title": "Underwater Memories",
     "category": "Productivity",
@@ -8,10 +8,10 @@
     "codeLink": "https://",
     "demoLink": "https://",
     "description": "Description Underwater Memories",
-    "id": "001"
+    "id": "p001"
   },
   {
-    "image": "images/Screenshot_Portfolio.png",
+    "image": "../images/Screenshot_Portfolio.png",
     "alt": "Preview Portfolio Website",
     "title": "Portfolio Website",
     "category": "Personal Branding",
@@ -19,17 +19,17 @@
     "codeLink": "https://",
     "demoLink": "https://",
     "description": "Description Portfolio Website",
-    "id": "002"
+    "id": "p002"
   },
   {
-    "image": "images/Screenshot_Portfolio.png",
+    "image": "../images/Screenshot_Portfolio.png",
     "alt": "Preview e-commerce",
     "title": "Shop",
     "category": "e-commerce",
-    "tool": "HTML, CSS, React, Tailwind",
+    "tool": "HTML, CSS, React, React Redux, Tailwind",
     "codeLink": "https://",
     "demoLink": "https://",
     "description": "Description e-commerce",
-    "id": "003"
+    "id": "p003"
   }
 ]

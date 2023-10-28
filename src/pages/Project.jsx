@@ -2,7 +2,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import projects from "../data/projects.json";
 import BackButton from "../components/BackButton";
 import skillIcons from "../data/skillIcons.json";
-import SkillItem from "../components/SkillItem";
+import ProjectItem from "../components/ProjectItem";
 
 function Project() {
   const { projectTitle } = useParams();
@@ -14,25 +14,30 @@ function Project() {
   console.log(icons);
   console.log(project.tool);
 
+  const renderedIcons = icons.map((skill) => (
+    <div key={skill.name}>
+      {skill.icon.endsWith("svg") ? (
+        <img src={skill.icon} alt={skill.name} />
+      ) : (
+        <i className={skill.icon}></i>
+      )}
+    </div>
+  ));
+
   if (!project) {
     navigate("*");
     return null;
   }
 
   return (
-    <div className="d-flex">
-      <figure>
-        <img src={project.image} alt={project.alt} />
-      </figure>
+    <div className="d-flex justify-content-center">
+      <div className={`${project.id} project`}>
+        <ProjectItem project={project} />
+      </div>
       <section>
         <p>{project.category}</p>
         <h3>{project.title}</h3>
-        <div>
-          {icons.map((skill) => (
-            <i className={skill.icon} key={skill.name}></i>
-          ))}
-        </div>
-        {/* <div>{project.tool}</div> */}
+        <div>{renderedIcons}</div>
         <p>{project.description}</p>
         <a
           href={project.codeLink}

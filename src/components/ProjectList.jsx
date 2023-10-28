@@ -3,7 +3,7 @@ import projects from "../data/projects.json";
 
 function ProjectList() {
   return (
-    <div className="projectlist p-5" id="projects">
+    <div className="projectlist py-5" id="projects">
       <h2>My Projects</h2>
       <ul className="d-flex flex-column flex-md-row px-0 gap-2 mx-auto">
         {projects.map((project) => (

@@ -16,11 +16,11 @@
     "name": "React"
   },
   {
-    "icon": "images/react-router.svg",
+    "icon": "../images/react-router.svg",
     "name": "React Router"
   },
   {
-    "icon": "images/redux.svg",
+    "icon": "../images/redux.svg",
     "name": "React Redux"
   },
   {
@@ -28,8 +28,8 @@
     "name": "Bootstrap"
   },
   {
-    "icon": "images/css_tailwind.svg",
-    "name": "Tailwind CSS"
+    "icon": "../images/css_tailwind.svg",
+    "name": "Tailwind"
   },
   {
     "icon": "fa-brands fa-git-alt",

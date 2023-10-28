@@ -4,16 +4,15 @@ function SkillItem({ skill }) {
   const isSvg = icon.endsWith("svg");
 
   return (
-    <li>
+    <li className="skill_item text-center ">
       {isSvg ? (
-        <img src={icon} alt={name} className="svg" />
+        <img src={icon} alt={name} className="mx-auto" />
       ) : (
         <i className={icon}></i>
       )}
-      <span>{name}</span>
+      <p className="pt-3 fs-6">{name}</p>
     </li>
   );
 }
 
 export default SkillItem;
-

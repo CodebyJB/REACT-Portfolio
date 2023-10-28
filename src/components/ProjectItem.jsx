@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 function ProjectItem({ project }) {
-  const { image, alt, title, category } = project;
+  const { image, alt, title, category, id } = project;
 
   return (
-    <li className="list-unstyled projectitem rounded m-auto">
+    <li className={`list-unstyled projectitem m-auto ${id}`}>
       <Link to={`/projects/${title}`}>
         <div className="d-flex flex-column justify-content-center align-items-center text-center">
           <figure className="wrapper_img position-relative">
