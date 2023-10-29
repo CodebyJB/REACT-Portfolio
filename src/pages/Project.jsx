@@ -30,15 +30,15 @@ function Project() {
   }
 
   return (
-    <div className="d-flex justify-content-center">
-      <div className={`${project.id} project`}>
+    <div className="d-flex justify-content-center align-items-center gap-5 flex-column flex-md-row min-vh-100">
+      <div className={`${project.id} project col-11 col-md-5`}>
         <ProjectItem project={project} />
       </div>
-      <section>
+      <section className="col-11 col-md-5">
         <p>{project.category}</p>
         <h3>{project.title}</h3>
-        <div>{renderedIcons}</div>
-        <p>{project.description}</p>
+        <div className="d-flex gap-2 align-items-center">{renderedIcons}</div>
+        <p className="text-justify">{project.description}</p>
         <a
           href={project.codeLink}
           target="_blank"

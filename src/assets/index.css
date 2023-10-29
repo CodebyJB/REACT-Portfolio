@@ -111,6 +111,11 @@ h3 {
   font-family: "JB font";
 }
 
+/* Logo */
+.logo {
+  max-width: 130px;
+}
+
 /* ... Animation */
 .dots {
   font-weight: bold;
@@ -164,7 +169,8 @@ h3 {
 
 /* ProjectList & ProjectItem */
 .projectitem {
-  width: 400px;
+  max-width: 400px;
+  max-height: 400px;
 }
 .p001 {
   background: linear-gradient(90deg, var(--light) 0%, var(--medium) 50%);
@@ -194,7 +200,8 @@ h3 {
 
 /* Project */
 .project .projectitem {
-  width: 600px;
+  max-width: 600px;
+  max-height: 600px;
 }
 
 /* TeckSkills */
@@ -208,4 +215,41 @@ h3 {
 }
 .skill_item i {
   font-size: 48px;
+}
+
+/* Button */
+.button {
+  color: var(--dark-primary);
+  border: 1px solid var(--primary);
+}
+.button:hover {
+  color: var(--light-primary);
+  background-color: var(--dark-primary);
+  border: 1px solid var(--dark-primary);
+}
+
+/* Contact */
+.contact {
+  background-color: var(--light-primary);
+}
+.contact a {
+  color: var(--very-dark);
+  position: relative;
+}
+.contact a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--very-dark);
+  transition: width 0.3s ease-in-out;
+}
+.contact a:hover::before {
+  width: 100%;
+}
+.contact_img {
+  width: 550px;
+  margin-top: -90px;
 }

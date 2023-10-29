@@ -9,9 +9,9 @@ function BackButton() {
         e.preventDefault();
         navigate(-1);
       }}
-      className="px-3 py-1 rounded fs-5 my-3"
+      className="button px-3 py-1 rounded fs-6 my-3"
     >
-      <i className="fa-solid fa-arrow-left"></i> Back
+      <i className="fa-solid fa-arrow-left"></i> Zurück
     </button>
   );
 }

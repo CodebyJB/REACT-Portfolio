@@ -18,21 +18,21 @@ function SideNav() {
               scrollToSection("projects");
             }}
           >
-            My Projects
+            Meine Projekte
           </li>
           <li
             onClick={() => {
               scrollToSection("about");
             }}
           >
-            About me
+            Über mich
           </li>
           <li
             onClick={() => {
               scrollToSection("contact");
             }}
           >
-            Get in touch!{" "}
+            Komm in Kontakt!
           </li>
         </ul>
       </nav>

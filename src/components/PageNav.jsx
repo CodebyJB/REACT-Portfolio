@@ -12,7 +12,7 @@ function PageNav() {
           }}
           className=" "
         >
-          My Projects
+          Meine Projekte
         </li>
         <li
           onClick={() => {
@@ -20,7 +20,7 @@ function PageNav() {
           }}
           className=""
         >
-          About me
+          Über mich
         </li>
         <li
           onClick={() => {
@@ -28,7 +28,7 @@ function PageNav() {
           }}
           className=""
         >
-          Get in touch!
+          Komm in Kontakt!
         </li>
       </ul>
     </nav>
