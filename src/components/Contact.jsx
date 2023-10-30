@@ -8,7 +8,7 @@ function Contact() {
       <Logo />
       <div className="d-flex flex-column flex-sm-row justify-content-center ">
         {/* <SideNav /> */}
-        <div className="">
+        <div>
           <img
             src="images/titleImg.png"
             alt="img"

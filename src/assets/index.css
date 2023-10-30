@@ -18,49 +18,6 @@
   src: url("../fonts/quicksand-v31-latin-700.woff2") format("woff2");
 }
 
-/* kumbh-sans-regular - latin */
-@font-face {
-  font-display: swap;
-  font-family: "Kumbh Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/kumbh-sans-v20-latin-regular.woff2") format("woff2");
-}
-/* kumbh-sans-700 - latin */
-@font-face {
-  font-display: swap;
-  font-family: "Kumbh Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/kumbh-sans-v20-latin-700.woff2") format("woff2");
-}
-
-/* krona-one-regular - latin */
-@font-face {
-  font-display: swap;
-  font-family: "Krona One";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/krona-one-v14-latin-regular.woff2") format("woff2");
-}
-
-/* open-sans-regular - latin */
-@font-face {
-  font-display: swap;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/open-sans-v36-latin-regular.woff2") format("woff2");
-}
-/* open-sans-700 - latin */
-@font-face {
-  font-display: swap;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/open-sans-v36-latin-700.woff2") format("woff2");
-}
-
 /* JB font */
 @font-face {
   font-family: "JB font";
@@ -111,9 +68,90 @@ h3 {
   font-family: "JB font";
 }
 
+/* StartPage */
+.startpage {
+  background: linear-gradient(
+    90deg,
+    var(--medium) 0%,
+    var(--dark) 50%,
+    var(--very-dark) 100%
+  );
+  transition: 2s linear;
+}
+.spinner {
+  animation: spinner 5s infinite linear;
+}
+@keyframes spinner {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-image: url("images/heroImg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: var(--accent1);
+}
+.hero h1 {
+  position: absolute;
+  bottom: 5%;
+  font-size: 20vh;
+  color: var(--dark-primary);
+  animation: slideInfinite 20s linear infinite;
+  white-space: nowrap;
+  letter-spacing: 25px;
+}
+
+@keyframes slideInfinite {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.hero p {
+  position: absolute;
+  font-size: 7.5vh;
+  right: 10%;
+  top: 40%;
+  line-height: 0.9;
+  letter-spacing: 3px;
+}
+@media screen and (max-width: 690px) {
+  .hero p {
+    background-color: #00000028;
+    color: var(--light-primary);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 5vh;
+  }
+}
+
 /* Logo */
 .logo {
   max-width: 130px;
+}
+
+/* TeckSkills */
+.skill_item figure {
+  max-height: 48px;
+  max-width: 48px;
+}
+.skill_item img {
+  height: 48px;
+  width: 48px;
+}
+.skill_item i {
+  font-size: 48px;
 }
 
 /* ... Animation */
@@ -129,7 +167,7 @@ h3 {
     clip-path: inset(0 -1ch 0 0);
   }
 }
-.dots1 {
+/* .dots1 {
   width: 60px;
   aspect-ratio: 4;
   background: radial-gradient(circle closest-side, #000 90%, #0000) 0 /
@@ -141,33 +179,12 @@ h3 {
   to {
     clip-path: inset(0 -34% 0 0);
   }
-}
+} */
 
-/* StartPage */
-.startpage {
-  background: linear-gradient(
-    90deg,
-    var(--medium) 0%,
-    var(--dark) 50%,
-    var(--very-dark) 100%
-  );
-  transition: 2s linear;
-}
-.spinner {
-  animation: s1 5s infinite linear;
-}
-@keyframes s1 {
-  to {
-    transform: rotate(1turn);
-  }
-}
-
-.hero,
+/* ProjectList & ProjectItem */
 .projectlist {
   background-color: var(--accent1);
 }
-
-/* ProjectList & ProjectItem */
 .projectitem {
   max-width: 400px;
   max-height: 400px;
@@ -204,30 +221,6 @@ h3 {
   max-height: 600px;
 }
 
-/* TeckSkills */
-.skill_item figure {
-  max-height: 48px;
-  max-width: 48px;
-}
-.skill_item img {
-  height: 48px;
-  width: 48px;
-}
-.skill_item i {
-  font-size: 48px;
-}
-
-/* Button */
-.button {
-  color: var(--dark-primary);
-  border: 1px solid var(--primary);
-}
-.button:hover {
-  color: var(--light-primary);
-  background-color: var(--dark-primary);
-  border: 1px solid var(--dark-primary);
-}
-
 /* Contact */
 .contact {
   background-color: var(--light-primary);
@@ -252,4 +245,16 @@ h3 {
 .contact_img {
   width: 550px;
   margin-top: -90px;
+}
+
+/* Button */
+.button {
+  color: var(--dark-primary);
+  border: 1px solid var(--primary);
+  transition: 2s linear;
+}
+.button:hover {
+  color: var(--light-primary);
+  background-color: var(--dark-primary);
+  border: 1px solid var(--dark-primary);
 }

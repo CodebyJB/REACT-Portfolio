@@ -1,26 +1,27 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 import PageNav from "./PageNav";
-import StartPage from "./StartPage";
+// import StartPage from "./StartPage";
 
 function Hero() {
-  const [visible, setVisible] = useState(true);
+  // const [visible, setVisible] = useState(true);
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setVisible(false);
-    }, 5000);
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     setVisible(false);
+  //   }, 5000);
 
-    return () => clearTimeout(timeout);
-  }, []);
+  //   return () => clearTimeout(timeout);
+  // }, []);
 
   return (
     <div className="hero vh-100" id="hero">
-      {visible && <StartPage visible={visible} />}
+      {/* {visible && <StartPage visible={visible} />} */}
       <PageNav />
-      <h1>Jennifer Braunbarth</h1>
-      <h2>Frontend Developer</h2>
-      <img src="" alt="img" />
+      <h1>- Jennifer Braunbarth -</h1>
+      <p>
+        Frontend <br /> Developer
+      </p>
     </div>
   );
 }
