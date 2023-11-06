@@ -1,16 +1,14 @@
-import Logo from "./Logo";
 import { scrollToSection } from "../utils/scrollToSection";
 
 function PageNav() {
   return (
-    <nav className="pagenav d-flex justify-content-between ">
-      <Logo />
-      <ul className="d-flex gap-5 px-3 align-items-center list-unstyled">
+    <nav className="pagenav">
+      <ul className="d-md-flex gap-5 px-3 align-items-center list-unstyled d-none">
         <li
           onClick={() => {
             scrollToSection("projects");
           }}
-          className=" "
+          role="button"
         >
           Meine Projekte
         </li>
@@ -18,7 +16,7 @@ function PageNav() {
           onClick={() => {
             scrollToSection("about");
           }}
-          className=""
+          role="button"
         >
           Über mich
         </li>
@@ -26,7 +24,7 @@ function PageNav() {
           onClick={() => {
             scrollToSection("contact");
           }}
-          className=""
+          role="button"
         >
           Komm in Kontakt!
         </li>

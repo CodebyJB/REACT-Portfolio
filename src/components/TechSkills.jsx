@@ -1,4 +1,3 @@
-// import SideNav from "./SideNav";
 import skillIcons from "../data/skillIcons.json";
 import SkillItem from "./SkillItem";
 
@@ -18,7 +17,6 @@ function TechSkills() {
           <SkillItem skill={skill} key={skill.name} />
         ))}
       </ul>
-      {/* <SideNav /> */}
     </div>
   );
 }

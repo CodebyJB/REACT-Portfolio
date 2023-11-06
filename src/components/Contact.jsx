@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
-// import SideNav from "./SideNav";
 
 function Contact() {
   return (
     <div className="contact min-vh-100 z-1" id="contact">
       <Logo />
       <div className="d-flex flex-column flex-sm-row justify-content-center ">
-        {/* <SideNav /> */}
         <div>
           <img
             src="images/titleImg.png"

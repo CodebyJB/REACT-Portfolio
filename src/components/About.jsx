@@ -1,10 +1,9 @@
-import SideNav from "./SideNav";
-
 function About() {
   return (
     <div className="vh-100" id="about">
-      About
-      <SideNav />
+      <div className="d-flex justify-content-between">
+        <h2>Über mich</h2>
+      </div>
     </div>
   );
 }
