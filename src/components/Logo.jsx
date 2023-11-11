@@ -7,6 +7,7 @@ function Logo() {
         scrollToSection("hero");
       }}
       role="button"
+      className="logo"
     >
       <img
         src="images/Logo_transparentBg.png"
