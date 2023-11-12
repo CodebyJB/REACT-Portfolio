@@ -5,14 +5,19 @@ import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
 import Project from "./pages/Project";
 import PageNotFound from "./pages/PageNotFound";
-import BurgerMenu from "./components/BurgerMenu";
 import AnimatedCursor from "react-animated-cursor";
 
 function App() {
   return (
     <div>
-      <BurgerMenu />
-      <AnimatedCursor color="156, 39, 176" />
+      <AnimatedCursor
+        color="156, 39, 176"
+        innerSize={8}
+        outerSize={15}
+        outerAlpha={0.4}
+        innerScale={1}
+        outerScale={5}
+      />
       <div className="content">
         <BrowserRouter>
           <Routes>

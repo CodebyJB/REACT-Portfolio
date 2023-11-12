@@ -1,28 +1,20 @@
-import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import PageNav from "./PageNav";
-import StartPage from "./StartPage";
+import useScroll from "../hooks/useScroll";
 
 function Hero() {
-  const [visible, setVisible] = useState(true);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setVisible(false);
-    }, 5000);
-
-    return () => clearTimeout(timeout);
-  }, []);
+  const isScrolledDown = useScroll();
 
   return (
     <div className="hero vh-100" id="hero">
-      <StartPage visible={visible} />
       <div className="d-flex justify-content-between align-items-center ">
         <Logo />
-        <PageNav />
+        {isScrolledDown ? "" : <PageNav />}
         <div className="d-block d-md-none"></div>
       </div>
-      <h1>- Jennifer Braunbarth -</h1>
+      <h1 className={isScrolledDown ? "scroll-up" : "scroll-down"}>
+        - Jennifer Braunbarth -
+      </h1>
       <p>
         Frontend <br /> Developer
       </p>

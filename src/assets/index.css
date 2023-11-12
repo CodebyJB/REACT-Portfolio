@@ -69,7 +69,7 @@ h3 {
   font-family: "JB font";
 }
 
-/* StartPage */
+/* StartPage ---------- */
 .startpage {
   background: linear-gradient(
     90deg,
@@ -77,12 +77,33 @@ h3 {
     var(--dark-secondary) 50%,
     var(--secondary-text) 100%
   );
-  transition: opacity 2s ease-out;
-  z-index: 6000;
+  overflow: hidden;
 }
+
 .fade-out {
-  opacity: 0;
+  animation: fadeOut 6s ease-out;
 }
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.35;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 3s ease-in;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0.15;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .spinner {
   animation: spinner 5s infinite linear;
 }
@@ -92,7 +113,7 @@ h3 {
   }
 }
 
-/* Logo */
+/* Logo ---------- */
 .logo {
   max-width: 130px;
 }
@@ -105,7 +126,7 @@ h3 {
   }
 }
 
-/* Hero */
+/* Hero ---------- */
 .hero {
   position: relative;
   overflow: hidden;
@@ -115,14 +136,9 @@ h3 {
   background-size: contain;
   background-color: var(--accent1);
 }
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 1100px) {
   .hero {
     background-position: 20%;
-  }
-}
-@media screen and (min-width: 767px) {
-  .hero {
-    z-index: 5000;
   }
 }
 
@@ -131,19 +147,33 @@ h3 {
   bottom: 5%;
   font-size: 20vh;
   color: var(--primary);
-  animation: slideInfinite 20s linear infinite;
   white-space: nowrap;
   letter-spacing: 25px;
 }
 
-@keyframes slideInfinite {
+.scroll-up {
+  animation: slideRight 20s linear infinite;
+}
+@keyframes slideRight {
   0% {
-    left: -150%;
+    transform: translateX(-100%);
   }
   100% {
-    left: 100%;
+    transform: translateX(80%);
   }
 }
+.scroll-down {
+  animation: slideLeft 20s linear infinite;
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .hero p {
   position: absolute;
   font-size: 7.5vh;
@@ -170,7 +200,18 @@ h3 {
   }
 }
 
-/* SideNav, Hamburger, Sidebar */
+/* PageNav ---------- */
+.hero .pagenav .placeholder {
+  background-color: var(--accent1);
+  width: 50px;
+  margin-right: 12.5px;
+  margin-left: -20px;
+  height: 50px;
+  opacity: 1;
+  z-index: 2500 !important;
+}
+
+/* SideNav, Hamburger, Sidebar ---------- */
 
 /* Position and sizing of burger button */
 .bm-burger-button {
@@ -221,7 +262,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* TeckSkills */
+/* TeckSkills ---------- */
 .skill_item figure {
   max-height: 48px;
   max-width: 48px;
@@ -261,7 +302,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 } */
 
-/* ProjectList & ProjectItem */
+/* ProjectList & ProjectItem ---------- */
 .projectlist {
   background-color: var(--accent1);
 }
@@ -308,15 +349,20 @@ Note: Beware of modifying this element as it can break the animations - you shou
   filter: grayscale(2);
 }
 
-/* Project */
+/* Project ---------- */
 .project .projectitem {
   max-width: 600px;
   max-height: 600px;
 }
 
-/* Contact */
+/* Contact ---------- */
 .contact {
-  background-color: var(--light-primary);
+  background: linear-gradient(
+    90deg,
+    var(--dark-primary) 0%,
+    var(--dark-secondary) 50%,
+    var(--light-primary) 100%
+  );
 }
 .contact a,
 .pagenav li,
@@ -347,9 +393,32 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .contact_img {
   width: 550px;
   margin-top: -90px;
+  transition: 3s linear;
 }
+/* .skew-down {
+  animation: skewDown 20s linear infinite;
+}
+@keyframes skewDown {
+  0% {
+    transform: skewY(10deg);
+  }
+  100% {
+    transform: skewY(0);
+  }
+}
+.skew-up {
+  animation: skewUp 20s linear infinite;
+}
+@keyframes skewUp {
+  0% {
+    transform: skewY(0);
+  }
+  100% {
+    transform: skewY(10deg);
+  }
+} */
 
-/* Button */
+/* Button ---------- */
 .button {
   color: var(--dark-primary);
   background-color: var(--light-primary);

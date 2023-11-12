@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
+import useScroll from "../hooks/useScroll";
 
 function Contact() {
+  const isScrolledDown = useScroll();
+  const tiltStyle = {
+    transform: isScrolledDown
+      ? "perspective(1000px) rotateY(30deg)"
+      : "perspective(1000px) rotateY(0deg)",
+  };
+
   return (
     <div className="contact min-vh-100 z-1" id="contact">
       <Logo />
@@ -10,7 +18,9 @@ function Contact() {
           <img
             src="images/titleImg.png"
             alt="img"
-            className="contact_img mx-auto z-0"
+            className={`contact_img mx-auto z-0 
+            `}
+            style={tiltStyle}
           />
         </div>
         <div className="d-flex flex-column justify-content-center text-center text-sm-end me-3">
@@ -50,7 +60,7 @@ function Contact() {
           <p className="mb-0 pt-5">
             <i className="fa-regular fa-copyright"></i> Copyright 2023
           </p>
-          <p className="mb-0">
+          <p className="mb-5">
             Made with <i className="fa-solid fa-heart"></i>
           </p>
         </div>

@@ -8,26 +8,24 @@ function PageNav() {
           onClick={() => {
             scrollToSection("projects");
           }}
-          role="button"
         >
-          Meine Projekte
+          <a>Meine Projekte</a>
         </li>
         <li
           onClick={() => {
             scrollToSection("about");
           }}
-          role="button"
         >
-          Über mich
+          <a>Über mich</a>
         </li>
         <li
           onClick={() => {
             scrollToSection("contact");
           }}
-          role="button"
         >
-          Komm in Kontakt!
+          <a>Komm in Kontakt!</a>
         </li>
+        <div className="placeholder"></div>
       </ul>
     </nav>
   );
