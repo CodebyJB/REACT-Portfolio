@@ -2,7 +2,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import projects from "../data/projects.json";
 import BackButton from "../components/BackButton";
 import skillIcons from "../data/skillIcons.json";
-import ProjectItem from "../components/ProjectItem";
 
 function Project() {
   const { projectTitle } = useParams();
@@ -31,19 +30,28 @@ function Project() {
 
   return (
     <div className="d-flex justify-content-center align-items-center gap-5 flex-column flex-md-row min-vh-100">
-      <div className={`${project.id} project col-11 col-md-5`}>
-        <ProjectItem project={project} />
-      </div>
+      <figure
+        className={`${project.id} project col-11 col-md-5 py-5 mt-1`}
+        data-aos="zoom-in"
+      >
+        <img
+          src={project.image}
+          alt={project.alt}
+          className="p-3 my-5 img-fluid d-flex justify-content-center align-items-center"
+        />
+      </figure>
       <section className="col-11 col-md-5">
         <p>{project.category}</p>
-        <h3>{project.title}</h3>
-        <div className="d-flex gap-2 align-items-center">{renderedIcons}</div>
+        <h3 className="mb-5 pt-3 border-bottom">{project.title}</h3>
+        <div className="d-flex gap-2 align-items-center mb-4">
+          {renderedIcons}
+        </div>
         <p className="text-justify">{project.description}</p>
         <a
           href={project.codeLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-decoration-none me-2"
+          className="me-2"
         >
           <i className="fa-solid fa-code"></i> Code
         </a>
@@ -52,11 +60,11 @@ function Project() {
           href={project.demoLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-decoration-none ms-3"
+          className="ms-3"
         >
           <i className="fa-solid fa-laptop"></i> Demo
         </a>
-        <div>
+        <div className="pt-2">
           <BackButton />
         </div>
       </section>

@@ -7,7 +7,7 @@ function BackButton() {
     <button
       onClick={(e) => {
         e.preventDefault();
-        navigate(-1);
+        navigate("/");
       }}
       className="button px-3 py-1 rounded fs-6 my-3"
     >

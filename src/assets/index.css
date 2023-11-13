@@ -68,6 +68,9 @@ h2,
 h3 {
   font-family: "JB font";
 }
+a {
+  text-decoration: none;
+}
 
 /* StartPage ---------- */
 .startpage {
@@ -304,28 +307,41 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* ProjectList & ProjectItem ---------- */
 .projectlist {
-  background-color: var(--accent1);
+  /* background-color: var(--accent1); */
+  /* background: linear-gradient(
+    90deg,
+    var(--accent1) 0%,
+    var(--light-primary) 50%
+  ); */
+  background: linear-gradient(
+    90deg,
+    var(--dark-secondary) 0%,
+    var(--primary) 50%,
+    var(--light-primary) 100%
+  );
 }
-.projectitem {
-  max-width: 400px;
-  max-height: 400px;
+.projectlist .projectitem {
+  width: 420px;
+  height: 420px;
+  /* max-width: 420px;
+  max-height: 420px; */
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
 }
-.p001 {
+.p100 {
   background: linear-gradient(
     90deg,
     var(--light-text) 0%,
     var(--light-secondary) 50%
   );
 }
-.p002 {
+.p200 {
   background: linear-gradient(
     90deg,
     var(--light-secondary) 0%,
     var(--dark-secondary) 50%
   );
 }
-.p003 {
+.p300 {
   background: linear-gradient(
     90deg,
     var(--dark-secondary) 0%,
@@ -333,24 +349,39 @@ Note: Beware of modifying this element as it can break the animations - you shou
   );
 }
 .projectitem .wrapper_img {
-  padding: 90px 30px 80px;
+  padding: 80px 20px 0;
 }
-/* .projectitem img {
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
-} */
+.projectlist .wrapper_img {
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+}
+@media screen and (max-width: 1210px) {
+  .projectlist .wrapper_img {
+    height: 260px;
+  }
+}
+.projectlist .full_img {
+  width: 100%;
+  height: auto;
+  transition: transform 4s ease;
+}
+.projectlist .wrapper_img:hover .full_img {
+  transform: translateY(-80%);
+}
 .title_block {
   opacity: 0;
+  color: var(--primary-text);
 }
 .projectlist .projectitem:hover .title_block {
   opacity: 1;
 }
 .projectlist .projectitem:hover {
   transform: scale(0.95);
-  filter: grayscale(2);
 }
 
 /* Project ---------- */
-.project .projectitem {
+.project {
   max-width: 600px;
   max-height: 600px;
 }
@@ -359,7 +390,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .contact {
   background: linear-gradient(
     90deg,
-    var(--dark-primary) 0%,
+    var(--primary) 0%,
     var(--dark-secondary) 50%,
     var(--light-primary) 100%
   );
@@ -421,7 +452,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Button ---------- */
 .button {
   color: var(--dark-primary);
-  background-color: var(--light-primary);
+  /* background-color: var(--light-primary); */
   border: 1px solid var(--dark-primary);
   transition: 1s linear;
 }

@@ -27,34 +27,20 @@ function Contact() {
           <h2 className="my-5">Komm in Kontakt!</h2>
           <div className="d-flex flex-column gap-2">
             <span>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-decoration-none"
-              >
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-github"></i> Github
               </a>
             </span>
             <span>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-decoration-none"
-              >
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-xing"></i> XING
               </a>
             </span>
             <span>
-              <Link to={"/impressum"} className="text-decoration-none">
-                Impressum
-              </Link>
+              <Link to={"/impressum"}>Impressum</Link>
             </span>
             <span>
-              <Link to={"/dsvgo"} className="text-decoration-none">
-                Datenschutz
-              </Link>
+              <Link to={"/dsvgo"}>Datenschutz</Link>
             </span>
           </div>
           <p className="mb-0 pt-5">

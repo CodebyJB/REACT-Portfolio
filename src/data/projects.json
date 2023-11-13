@@ -1,35 +1,38 @@
 [
   {
     "image": "../images/Screenshot_Portfolio.png",
+    "imageFull": "../images/Portfolio_full.jpeg",
     "alt": "Preview Underwater Memories",
     "title": "Underwater Memories",
     "category": "Productivity",
-    "tool": "HTML, CSS, React, React Router",
+    "tool": "HTML, CSS, JavaScript,React, React Router",
     "codeLink": "https://",
     "demoLink": "https://",
     "description": "Description Underwater Memories",
-    "id": "p001"
+    "id": "p100"
   },
   {
     "image": "../images/Screenshot_Portfolio.png",
+    "imageFull": "../images/Portfolio_full.jpeg",
     "alt": "Preview Portfolio Website",
     "title": "Portfolio Website",
     "category": "Personal Branding",
-    "tool": "HTML, CSS, React, React Router,Bootstrap",
+    "tool": "HTML, CSS, JavaScript, React, React Router, Bootstrap",
     "codeLink": "https://",
     "demoLink": "https://",
-    "description": "Description Portfolio Website ",
-    "id": "p002"
+    "description": "Welcome to my personal portfolio website! Here, you will find a showcase of my web development projects using HTML, CSS, and JavaScript. From responsive web designs to interactive user interfaces, each project reflects my passion for creating beautiful and functional websites. ",
+    "id": "p200"
   },
   {
     "image": "../images/Screenshot_Portfolio.png",
+    "imageFull": "../images/Portfolio_full.jpeg",
     "alt": "Preview e-commerce",
     "title": "Shop",
     "category": "e-commerce",
-    "tool": "HTML, CSS, React, React Router, React Redux, Tailwind",
+    "tool": "HTML, CSS,JavaScript, React, React Router, React Redux, Tailwind",
     "codeLink": "https://",
     "demoLink": "https://",
     "description": "Description e-commerce",
-    "id": "p003"
+    "id": "p300"
   }
 ]
