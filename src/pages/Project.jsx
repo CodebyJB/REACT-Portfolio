@@ -10,8 +10,6 @@ function Project() {
   const project = projects.find((p) => p.title === projectTitle);
 
   const icons = skillIcons.filter((icon) => project.tool.includes(icon.name));
-  console.log(icons);
-  console.log(project.tool);
 
   const renderedIcons = icons.map((skill) => (
     <div key={skill.name}>
@@ -43,27 +41,32 @@ function Project() {
       <section className="col-11 col-md-5">
         <p>{project.category}</p>
         <h3 className="mb-5 pt-3 border-bottom">{project.title}</h3>
-        <div className="d-flex gap-2 align-items-center mb-4">
-          {renderedIcons}
+        <div className="d-flex justify-content-between">
+          <div className="icons d-flex gap-2 align-items-center mb-4">
+            {renderedIcons}
+          </div>
+          <div>
+            <a
+              href={project.codeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="me-2 project-links"
+            >
+              <i className="fa-solid fa-code"></i> Code
+            </a>
+            |
+            <a
+              href={project.demoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ms-3 project-links"
+            >
+              <i className="fa-solid fa-laptop"></i> Demo
+            </a>
+          </div>
         </div>
+
         <p className="text-justify">{project.description}</p>
-        <a
-          href={project.codeLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="me-2"
-        >
-          <i className="fa-solid fa-code"></i> Code
-        </a>
-        |
-        <a
-          href={project.demoLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ms-3"
-        >
-          <i className="fa-solid fa-laptop"></i> Demo
-        </a>
         <div className="pt-2">
           <BackButton />
         </div>

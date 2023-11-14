@@ -6,7 +6,7 @@ function Contact() {
   const isScrolledDown = useScroll();
   const tiltStyle = {
     transform: isScrolledDown
-      ? "perspective(1000px) rotateY(30deg)"
+      ? "perspective(1000px) rotateY(15deg)"
       : "perspective(1000px) rotateY(0deg)",
   };
 
@@ -18,7 +18,7 @@ function Contact() {
           <img
             src="images/titleImg.png"
             alt="img"
-            className={`contact_img mx-auto z-0 
+            className={`contact_img mx-auto mb-5 z-0 
             `}
             style={tiltStyle}
           />

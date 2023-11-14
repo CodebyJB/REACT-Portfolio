@@ -34,6 +34,7 @@
 
   --light-primary: #e1bee7;
   --dark-primary: #7b1fa2;
+  --dark-primary-transparent: #7b1fa27c;
   --primary: #9c27b0;
   --light-text: #ffffff;
   --primary-text: #212121;
@@ -74,11 +75,17 @@ a {
 
 /* StartPage ---------- */
 .startpage {
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     var(--light-secondary) 0%,
     var(--dark-secondary) 50%,
     var(--secondary-text) 100%
+  ); */
+  background: linear-gradient(
+    90deg,
+    var(--dark-secondary) 0%,
+    var(--light-primary) 50%,
+    var(--primary) 100%
   );
   overflow: hidden;
 }
@@ -275,14 +282,38 @@ Note: Beware of modifying this element as it can break the animations - you shou
   width: 48px;
 }
 .skill_item i {
+  color: var(--secondary-text);
   font-size: 48px;
+}
+@media screen and (max-width: 475px) {
+  .skill_item img {
+    height: 40px;
+    width: 40px;
+  }
+  .skill_item i {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 322px) {
+  .skill_item img {
+    height: 30px;
+    width: 30px;
+  }
+  .skill_item i {
+    font-size: 30px;
+  }
+  .skill_item p {
+    font-size: 5px;
+  }
+}
+.skill_item :hover p {
+  color: var(--primary);
 }
 
 /* ... Animation */
 .dots {
-  font-weight: bold;
   font-family: monospace;
-  font-size: 30px;
+  font-size: 35px;
   clip-path: inset(0 3ch 0 0);
   animation: dots 1s steps(4) infinite;
 }
@@ -291,28 +322,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
     clip-path: inset(0 -1ch 0 0);
   }
 }
-/* .dots1 {
-  width: 60px;
-  aspect-ratio: 4;
-  background: radial-gradient(circle closest-side, #000 90%, #0000) 0 /
-    calc(100% / 3) 100% space;
-  clip-path: inset(0 100% 0 0);
-  animation: d1 1s steps(4) infinite;
-}
-@keyframes d1 {
-  to {
-    clip-path: inset(0 -34% 0 0);
-  }
-} */
 
 /* ProjectList & ProjectItem ---------- */
 .projectlist {
-  /* background-color: var(--accent1); */
-  /* background: linear-gradient(
-    90deg,
-    var(--accent1) 0%,
-    var(--light-primary) 50%
-  ); */
   background: linear-gradient(
     90deg,
     var(--dark-secondary) 0%,
@@ -321,10 +333,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
   );
 }
 .projectlist .projectitem {
-  width: 420px;
-  height: 420px;
-  /* max-width: 420px;
-  max-height: 420px; */
+  max-width: 420px;
+  max-height: 420px;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .p100 {
@@ -384,6 +394,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .project {
   max-width: 600px;
   max-height: 600px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.icons i {
+  color: var(--secondary-text);
+}
+.project-links {
+  color: var(--primary);
+  position: relative;
 }
 
 /* Contact ---------- */
@@ -405,7 +423,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .contact a::before,
 .pagenav li::before,
 .sidenav li::before,
-.burger-menu li span::before {
+.burger-menu li span::before,
+.project-links::before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -418,7 +437,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .contact a:hover::before,
 .pagenav li:hover::before,
 .sidenav li:hover::before,
-.burger-menu li span:hover::before {
+.burger-menu li span:hover::before,
+.project-links:hover::before {
   width: 100%;
 }
 .contact_img {
@@ -426,37 +446,15 @@ Note: Beware of modifying this element as it can break the animations - you shou
   margin-top: -90px;
   transition: 3s linear;
 }
-/* .skew-down {
-  animation: skewDown 20s linear infinite;
-}
-@keyframes skewDown {
-  0% {
-    transform: skewY(10deg);
-  }
-  100% {
-    transform: skewY(0);
-  }
-}
-.skew-up {
-  animation: skewUp 20s linear infinite;
-}
-@keyframes skewUp {
-  0% {
-    transform: skewY(0);
-  }
-  100% {
-    transform: skewY(10deg);
-  }
-} */
 
 /* Button ---------- */
 .button {
   color: var(--dark-primary);
-  /* background-color: var(--light-primary); */
+  background-color: var(--light-text);
   border: 1px solid var(--dark-primary);
   transition: 1s linear;
 }
 .button:hover {
-  color: var(--light-primary);
-  background-color: var(--dark-primary);
+  color: var(--light-text);
+  background-color: var(--dark-primary-transparent);
 }

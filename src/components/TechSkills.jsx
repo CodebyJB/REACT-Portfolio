@@ -8,10 +8,6 @@ function TechSkills() {
         <h2 className="fs-1">Mein Tech-Stack</h2>
         <span className="dots">...</span>
       </div>
-      {/* <div className="d-flex">
-        <h2>Technologien im Einsatz</h2>
-        <span className="dots1">...</span>
-      </div> */}
       <ul
         className="d-flex flex-wrap  list-unstyled justify-content-evenly gap-3 py-5"
         data-aos="fade-right"
