@@ -1,11 +1,21 @@
 import { useNavigate, useParams } from "react-router-dom";
-import projects from "../data/projects.json";
+import { useEffect } from "react";
+
 import BackButton from "../components/BackButton";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import projects from "../data/projects.json";
 import skillIcons from "../data/skillIcons.json";
 
 function Project() {
   const { projectTitle } = useParams();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true, disable: "mobile" });
+  }, []);
 
   const project = projects.find((p) => p.title === projectTitle);
 
@@ -41,8 +51,8 @@ function Project() {
       <section className="col-11 col-md-5">
         <p>{project.category}</p>
         <h3 className="mb-5 pt-3 border-bottom">{project.title}</h3>
-        <div className="d-flex justify-content-between">
-          <div className="icons d-flex gap-2 align-items-center mb-4">
+        <div className="d-flex justify-content-between mb-4 flex-wrap">
+          <div className="icons d-flex gap-3 align-items-center">
             {renderedIcons}
           </div>
           <div>
@@ -50,7 +60,7 @@ function Project() {
               href={project.codeLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="me-2 project-links"
+              className="me-2 project-links fs-5 position-relative"
             >
               <i className="fa-solid fa-code"></i> Code
             </a>
@@ -59,7 +69,7 @@ function Project() {
               href={project.demoLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="ms-3 project-links"
+              className="ms-3 project-links fs-5"
             >
               <i className="fa-solid fa-laptop"></i> Demo
             </a>

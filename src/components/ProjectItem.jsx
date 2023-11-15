@@ -12,7 +12,7 @@ function ProjectItem({ project }) {
     >
       <Link to={`/projects/${title}`}>
         <div className="d-flex flex-column justify-content-center align-items-center text-center">
-          <figure className="wrapper_img position-relative">
+          <figure className="wrapper_img position-relative overflow-hidden">
             <img src={imageFull} alt={alt} className="full_img" />
           </figure>
           <div className="title_block">

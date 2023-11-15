@@ -1,4 +1,5 @@
 import BackButton from "../components/BackButton";
+
 import dsvgoData from "../data/dsvgoData.json";
 
 function Datenschutz() {

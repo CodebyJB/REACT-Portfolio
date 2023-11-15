@@ -1,12 +1,13 @@
 import Logo from "./Logo";
 import PageNav from "./PageNav";
+
 import useScroll from "../hooks/useScroll";
 
 function Hero() {
   const isScrolledDown = useScroll();
 
   return (
-    <div className="hero vh-100" id="hero">
+    <div className="hero vh-100 overflow-hidden position-relative" id="hero">
       <div className="d-flex justify-content-between align-items-center ">
         <Logo />
         {isScrolledDown ? "" : <PageNav />}

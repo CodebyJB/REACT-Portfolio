@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
+
 import Logo from "./Logo";
+
 import useScroll from "../hooks/useScroll";
 
 function Contact() {

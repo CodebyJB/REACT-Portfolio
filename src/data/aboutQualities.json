@@ -1,0 +1,64 @@
+[
+  {
+    "icon": "fa-solid fa-comments",
+    "title": "Kommunikativ",
+    "description": "Leidenschaftlicher Kommunikator mit einem Gespür für klare und effektive Botschaften."
+  },
+  {
+    "icon": "fa-solid fa-handshake",
+    "title": "Service-dienstleistungsorientiert",
+    "description": "Serviceorientiert und stets bestrebt, Lösungen zu finden, die sowohl den Nutzer als auch das Unternehmen bereichern."
+  },
+  {
+    "icon": "fa-solid fa-puzzle-piece",
+    "title": "Problemlöser",
+    "description": "Begeisterter Problemlöser, der Freude daran hat, komplexe Herausforderungen in elegante Lösungen zu verwandeln."
+  },
+  {
+    "icon": "fa-solid fa-rocket",
+    "title": "Motiviert",
+    "description": "Hochmotivierter Entwickler, der sich durch die Begeisterung für innovative Technologien antreibt."
+  },
+  {
+    "icon": "fa-solid fa-book",
+    "title": "Hohe Lernbereitschaft",
+    "description": "Ständig auf der Suche nach neuen Wissenshöhen und bereit, mich in neue Technologien und Konzepte zu vertiefen."
+  },
+  {
+    "icon": "fa-solid fa-palette",
+    "title": "Designaffin",
+    "description": "Designliebhaber mit einem Auge für Ästhetik und Benutzerfreundlichkeit, der Funktionalität und ansprechendes Design verbindet."
+  },
+  {
+    "icon": "fa-solid fa-people-group",
+    "title": "Teamplayer",
+    "description": "Teamorientiert und begeistert von der Zusammenarbeit, um gemeinsam herausragende Ergebnisse zu erzielen."
+  },
+  {
+    "icon": "fa-solid fa-lightbulb",
+    "title": "Innovativ",
+    "description": "Innovationsfreudig und ständig auf der Suche nach kreativen Ansätzen, um Projekte auf das nächste Level zu bringen."
+  },
+  {
+    "icon": "fa-solid fa-clock",
+    "title": "Agil",
+    "description": "Agil arbeitender Entwickler mit einem Gespür für effizientes Zeitmanagement und schnelle Anpassung an sich ändernde Anforderungen."
+  },
+  {
+    "icon": "fa-solid fa-chess",
+    "title": "Strategisch Denkend",
+    "description": "Strategischer Denker, der komplexe Probleme analysiert und durchdachte Lösungen für nachhaltige Ergebnisse entwickelt."
+  },
+
+  {
+    "icon": "fa-solid fa-screwdriver-wrench",
+    "title": "Vielseitig",
+    "description": "Vielseitiger Entwickler mit Erfahrung in verschiedenen Technologien und der Fähigkeit, sich schnell in neue Aufgabenbereiche einzuarbeiten."
+  },
+
+  {
+    "icon": "fa-solid fa-heart",
+    "title": "Fun",
+    "description": "Vielseitiger Entwickler mit Erfahrung in verschiedenen Technologien und der Fähigkeit, sich schnell in neue Aufgabenbereiche einzuarbeiten."
+  }
+]

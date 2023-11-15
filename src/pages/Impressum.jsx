@@ -1,4 +1,5 @@
 import BackButton from "../components/BackButton";
+
 import impressumData from "../data/impressumData.json";
 
 function Impressum() {

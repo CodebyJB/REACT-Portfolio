@@ -1,8 +1,11 @@
-import ProjectItem from "./ProjectItem";
-import projects from "../data/projects.json";
 import { useEffect } from "react";
+
+import ProjectItem from "./ProjectItem";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+import projects from "../data/projects.json";
 
 function ProjectList() {
   useEffect(() => {

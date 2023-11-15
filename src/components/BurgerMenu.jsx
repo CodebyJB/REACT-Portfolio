@@ -1,6 +1,8 @@
 import { useState } from "react";
+
 import { elastic as Menu } from "react-burger-menu";
 import { Slant as Hamburger } from "hamburger-react";
+
 import { scrollToSection } from "../utils/scrollToSection";
 
 function BurgerMenu() {

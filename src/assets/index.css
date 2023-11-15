@@ -26,12 +26,7 @@
 }
 
 :root {
-  --accent1: #b4bbc4;
-  /* --light: #fcfbfb;
-  --medium: #a6a6a6;
-  --dark: #545454;
-  --very-dark: #393838; */
-
+  --medium-blue: #b4bbc4;
   --light-primary: #e1bee7;
   --dark-primary: #7b1fa2;
   --dark-primary-transparent: #7b1fa27c;
@@ -75,21 +70,16 @@ a {
 
 /* StartPage ---------- */
 .startpage {
-  /* background: linear-gradient(
-    90deg,
-    var(--light-secondary) 0%,
-    var(--dark-secondary) 50%,
-    var(--secondary-text) 100%
-  ); */
   background: linear-gradient(
     90deg,
     var(--dark-secondary) 0%,
     var(--light-primary) 50%,
     var(--primary) 100%
   );
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
+/* Animation StartPage & Logo Spinner */
 .fade-out {
   animation: fadeOut 6s ease-out;
 }
@@ -138,13 +128,13 @@ a {
 
 /* Hero ---------- */
 .hero {
-  position: relative;
-  overflow: hidden;
+  /* position: relative; */
+  /* overflow: hidden; */
   background-image: url("images/heroImg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-color: var(--accent1);
+  background-color: var(--medium-blue);
 }
 @media screen and (max-width: 1100px) {
   .hero {
@@ -160,7 +150,7 @@ a {
   white-space: nowrap;
   letter-spacing: 25px;
 }
-
+/* Animation - Direction Change - Name */
 .scroll-up {
   animation: slideRight 20s linear infinite;
 }
@@ -211,8 +201,8 @@ a {
 }
 
 /* PageNav ---------- */
-.hero .pagenav .placeholder {
-  background-color: var(--accent1);
+.pagenav .placeholder {
+  background-color: var(--medium-blue);
   width: 50px;
   margin-right: 12.5px;
   margin-left: -20px;
@@ -222,6 +212,8 @@ a {
 }
 
 /* SideNav, Hamburger, Sidebar ---------- */
+/* SideBar - npm react-burger-menu */
+/* Hamburger - npm hamburger-react */
 
 /* Position and sizing of burger button */
 .bm-burger-button {
@@ -246,7 +238,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   height: 100%;
   width: 330px;
 }
-
 /* General sidebar styles */
 .bm-menu {
   background: var(--dark-primary);
@@ -256,17 +247,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-morph-shape {
   fill: var(--dark-primary);
 }
-
 /* Wrapper for item list */
 .bm-item-list {
   font-size: 4.15vh;
   margin-top: 20vh;
 }
-
 .menu-item {
   margin-bottom: 20px;
 }
-
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
@@ -282,7 +270,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   width: 48px;
 }
 .skill_item i {
-  color: var(--secondary-text);
+  color: var(--medium-blue);
   font-size: 48px;
 }
 @media screen and (max-width: 475px) {
@@ -310,7 +298,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   color: var(--primary);
 }
 
-/* ... Animation */
+/* ... Animation ... */
 .dots {
   font-family: monospace;
   font-size: 35px;
@@ -362,8 +350,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
   padding: 80px 20px 0;
 }
 .projectlist .wrapper_img {
-  position: relative;
-  overflow: hidden;
+  /* position: relative; */
+  /* overflow: hidden; */
   height: 280px;
 }
 @media screen and (max-width: 1210px) {
@@ -397,11 +385,33 @@ Note: Beware of modifying this element as it can break the animations - you shou
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .icons i {
-  color: var(--secondary-text);
+  color: var(--medium-blue);
+  font-size: 30px;
+}
+.icons img {
+  height: 38px;
+  width: 38px;
 }
 .project-links {
   color: var(--primary);
-  position: relative;
+  /* position: relative; */
+}
+
+/* About ---------- */
+.aboutitem {
+  transition: 3s ease-in-out;
+  color: var(--secondary-text);
+}
+.aboutitem:hover p {
+  color: var(--primary);
+}
+.aboutitem:hover i {
+  transform: scale(2);
+  /* rotate: z 20deg; */
+  color: var(--primary);
+}
+.aboutitem i {
+  color: var(--medium-blue);
 }
 
 /* Contact ---------- */
