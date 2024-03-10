@@ -8,7 +8,13 @@ function Hero() {
 
   return (
     <div className="hero vh-100 overflow-hidden position-relative" id="hero">
-      <div className="d-flex justify-content-between align-items-center ">
+      <div className="circle1"></div>
+      <div className="circle2"></div>
+      <div className="circle3"></div>
+      <figure className="position-absolute bottom-0 start-50 translate-middle-x m-0">
+        <img src="../../public/images/heroImg.png" alt="" />
+      </figure>
+      <div className="d-flex justify-content-between align-items-center">
         <Logo />
         {isScrolledDown ? "" : <PageNav />}
         <div className="d-block d-md-none"></div>
