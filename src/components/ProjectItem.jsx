@@ -6,7 +6,7 @@ function ProjectItem({ project }) {
 
   return (
     <li
-      className={`list-unstyled projectitem m-auto py-3 ${id}`}
+      className={`list-unstyled projectitem m-auto rounded py-3 ${id}`}
       data-aos="fade-up"
       data-aos-offset={offset}
     >

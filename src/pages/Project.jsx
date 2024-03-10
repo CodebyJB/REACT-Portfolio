@@ -39,7 +39,7 @@ function Project() {
   return (
     <div className="d-flex justify-content-center align-items-center gap-5 flex-column flex-md-row min-vh-100">
       <figure
-        className={`${project.id} project col-11 col-md-5 py-5 mt-1`}
+        className={`${project.id} project col-11 col-md-5 py-5 mt-1 rounded`}
         data-aos="zoom-in"
       >
         <img

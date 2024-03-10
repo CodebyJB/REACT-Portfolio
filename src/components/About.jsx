@@ -1,15 +1,15 @@
 import AboutItem from "./AboutItem";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 import aboutQualities from "../data/aboutQualities.json";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 function About() {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: false, disable: "mobile" });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({ duration: 1000, once: false, disable: "mobile" });
+  // }, []);
 
   return (
     <div className="container-sm container-md m-auto my-5" id="about">

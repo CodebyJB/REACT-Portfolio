@@ -1,4 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import Homepage from "./pages/Homepage";
 import Impressum from "./pages/Impressum";
@@ -8,6 +11,10 @@ import PageNotFound from "./pages/PageNotFound";
 import AnimatedCursor from "react-animated-cursor";
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false, disable: "mobile" });
+  }, []);
+
   return (
     <div>
       <AnimatedCursor

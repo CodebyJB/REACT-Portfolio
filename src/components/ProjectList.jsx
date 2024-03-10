@@ -1,16 +1,16 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 import ProjectItem from "./ProjectItem";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 import projects from "../data/projects.json";
 
 function ProjectList() {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: false, disable: "mobile" });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({ duration: 1000, once: false, disable: "mobile" });
+  // }, []);
 
   return (
     <div className="projectlist py-5 dvh-100" id="projects">
