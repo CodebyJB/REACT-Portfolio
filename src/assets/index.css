@@ -116,7 +116,7 @@ a {
 
 /* Logo ---------- */
 .logo {
-  max-width: 130px;
+  max-width: clamp(80px, 10vw, 130px);
 }
 .logo:hover {
   animation: spinner 8s infinite linear;
@@ -291,11 +291,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 /* Wrapper for item list */
 .bm-item-list {
-  font-size: 4.15vh;
   margin-top: 20vh;
 }
 .menu-item {
   margin-bottom: 20px;
+}
+.menu-item {
+  margin-bottom: 20px;
+  font-size: clamp(1rem, 7vw, 1.5rem);
 }
 /* Styling of overlay */
 .bm-overlay {
@@ -303,6 +306,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 /* TeckSkills ---------- */
+.techskills h2 {
+  font-size: clamp(1rem, 10vw, 2rem);
+}
 .skill_item figure {
   max-height: 48px;
   max-width: 48px;
@@ -317,20 +323,20 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 @media screen and (max-width: 475px) {
   .skill_item img {
-    height: 40px;
-    width: 40px;
+    height: 25px;
+    width: 25px;
   }
   .skill_item i {
-    font-size: 40px;
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 322px) {
   .skill_item img {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
   }
   .skill_item i {
-    font-size: 30px;
+    font-size: 20px;
   }
   .skill_item p {
     font-size: 5px;
@@ -344,7 +350,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* ... Animation ... */
 .dots {
   font-family: monospace;
-  font-size: 35px;
   clip-path: inset(0 3ch 0 0);
   animation: dots 1s steps(4) infinite;
 }
@@ -429,14 +434,15 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 .icons i {
   color: var(--medium-blue);
-  font-size: 30px;
+  font-size: clamp(16px, 10vw, 25px);
 }
 .icons img {
-  height: 38px;
-  width: 38px;
+  max-height: 38px;
+  max-width: 38px;
 }
 .project-links {
   color: var(--primary);
+  font-size: clamp(16px, 10vw, 20px);
   /* position: relative; */
 }
 
@@ -510,4 +516,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .button:hover {
   color: var(--light-text);
   background-color: var(--dark-primary-transparent);
+}
+
+/* DSVGO / Impressum */
+.dsvgo h1,
+.impressum h1 {
+  font-size: clamp(1rem, 10vw, 3rem);
+  word-break: break-word;
+}
+.dsvgo h2,
+.impressum h2 {
+  font-size: clamp(10px, 10vw, 2rem);
+  word-break: break-word;
 }

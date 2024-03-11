@@ -39,40 +39,43 @@ function Project() {
   return (
     <div className="d-flex justify-content-center align-items-center gap-5 flex-column flex-md-row min-vh-100">
       <figure
-        className={`${project.id} project col-11 col-md-5 py-5 mt-1 rounded`}
+        className={`${project.id} project m-2 rounded`}
         data-aos="zoom-in"
       >
         <img
           src={project.image}
           alt={project.alt}
-          className="p-3 my-5 img-fluid d-flex justify-content-center align-items-center"
+          className="p-3 my-5 d-flex justify-content-center align-items-center"
         />
       </figure>
       <section className="col-11 col-md-5">
         <p>{project.category}</p>
         <h3 className="mb-5 pt-3 border-bottom">{project.title}</h3>
         <div className="d-flex justify-content-between mb-4 flex-wrap">
-          <div className="icons d-flex gap-3 align-items-center">
+          <div className="icons d-flex gap-3 align-items-center flex-wrap">
             {renderedIcons}
           </div>
-          <div>
-            <a
-              href={project.codeLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="me-2 project-links fs-5 position-relative"
-            >
-              <i className="fa-solid fa-code"></i> Code
-            </a>
-            |
-            <a
-              href={project.demoLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ms-3 project-links fs-5"
-            >
-              <i className="fa-solid fa-laptop"></i> Demo
-            </a>
+          <div className="d-flex flex-wrap">
+            <span>
+              <a
+                href={project.codeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-links position-relative me-4"
+              >
+                <i className="fa-solid fa-code"></i> Code
+              </a>
+            </span>
+            <span>
+              <a
+                href={project.demoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-links position-relative"
+              >
+                <i className="fa-solid fa-laptop"></i> Demo
+              </a>
+            </span>
           </div>
         </div>
 

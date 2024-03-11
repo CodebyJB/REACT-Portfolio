@@ -25,7 +25,7 @@ function Contact() {
             style={tiltStyle}
           />
         </div>
-        <div className="d-flex flex-column justify-content-center text-center text-sm-end me-3">
+        <div className="d-flex flex-column justify-content-center text-center text-sm-end mx-5">
           <h2 className="my-5">Komm in Kontakt!</h2>
           <div className="d-flex flex-column gap-2">
             <span>
@@ -46,7 +46,7 @@ function Contact() {
             </span>
           </div>
           <p className="mb-0 pt-5">
-            <i className="fa-regular fa-copyright"></i> Copyright 2023
+            <i className="fa-regular fa-copyright"></i> Copyright 2024
           </p>
           <p className="mb-5">
             Made with <i className="fa-solid fa-heart"></i>
