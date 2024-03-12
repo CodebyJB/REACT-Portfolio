@@ -116,7 +116,8 @@ a {
 
 /* Logo ---------- */
 .logo {
-  max-width: clamp(80px, 10vw, 130px);
+  max-width: clamp(90px, 10vw, 130px);
+  z-index: 100;
 }
 .logo:hover {
   animation: spinner 8s infinite linear;
@@ -176,12 +177,12 @@ a {
 
 .hero {
   background-color: var(--medium-blue);
-  backdrop-filter: blur(200px);
+  /* backdrop-filter: blur(200px); */
 }
 @media screen and (max-width: 1100px) {
-  .hero {
+  /* .hero {
     background-position: 20%;
-  }
+  } */
 }
 
 .hero h1 {
@@ -251,6 +252,9 @@ a {
   height: 50px;
   opacity: 1;
   z-index: 2500 !important;
+}
+.pagenav a {
+  font-size: clamp(1rem, 10vw, 1.25rem);
 }
 
 /* SideNav, Hamburger, Sidebar ---------- */
@@ -504,6 +508,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   width: 550px;
   margin-top: -90px;
   transition: 3s linear;
+  z-index: 50;
 }
 
 /* Button ---------- */

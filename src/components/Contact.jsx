@@ -6,23 +6,22 @@ import useScroll from "../hooks/useScroll";
 
 function Contact() {
   const isScrolledDown = useScroll();
-  const tiltStyle = {
-    transform: isScrolledDown
-      ? "perspective(1000px) rotateY(15deg)"
-      : "perspective(1000px) rotateY(0deg)",
-  };
+  // const tiltStyle = {
+  //   transform: isScrolledDown
+  //     ? "perspective(1000px) rotateY(15deg)"
+  //     : "perspective(1000px) rotateY(0deg)",
+  // };
 
   return (
-    <div className="contact min-vh-100 z-1" id="contact">
+    <div className="contact min-vh-100" id="contact">
       <Logo />
-      <div className="d-flex flex-column flex-sm-row justify-content-center ">
+      <div className="d-flex flex-column flex-sm-row justify-content-center">
         <div>
           <img
             src="images/titleImg.png"
             alt="img"
-            className={`contact_img mx-auto mb-5 z-0 
-            `}
-            style={tiltStyle}
+            className={`contact_img mx-auto mb-5`}
+            // style={tiltStyle}
           />
         </div>
         <div className="d-flex flex-column justify-content-center text-center text-sm-end mx-5">

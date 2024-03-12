@@ -3,7 +3,7 @@ import { scrollToSection } from "../utils/scrollToSection";
 function PageNav() {
   return (
     <nav className="pagenav">
-      <ul className="d-md-flex gap-5 px-3 align-items-center list-unstyled d-none">
+      <ul className="d-lg-flex gap-5 px-3 align-items-center list-unstyled d-none">
         <li
           onClick={() => {
             scrollToSection("projects");

@@ -12,7 +12,7 @@ function Logo() {
       <img
         src="images/Logo_transparentBg.png"
         alt="Logo"
-        className="logo p-2"
+        className="logo p-2 z-3"
       />
     </figure>
   );
