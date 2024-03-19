@@ -24,7 +24,7 @@ function About() {
         Inspiration in der Kunst, Natur und neuen Herausforderungen, die mein
         Denken erweitern.
       </p>
-      <ul className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+      <ul className="row row-cols-1 row-cols-sm-2 row-cols-md-3 mx-auto p-0">
         {aboutQualities.map((quality) => (
           <AboutItem quality={quality} key={quality.title} />
         ))}

@@ -188,7 +188,7 @@ a {
 .hero h1 {
   position: absolute;
   bottom: 5%;
-  font-size: 20vh;
+  font-size: clamp(3rem, 10vw, 20vh);
   color: var(--primary);
   white-space: nowrap;
   letter-spacing: 25px;
@@ -219,20 +219,26 @@ a {
 
 .hero p {
   position: absolute;
-  font-size: 7.5vh;
+  font-size: clamp(5vh, 6vh, 7.5vh);
   right: 10%;
   top: 40%;
   line-height: 0.9;
   letter-spacing: 3px;
 }
-@media screen and (max-width: 690px) {
-  /* .hero {
+/* @media screen and (max-width: 992px) {
+.hero p{
+  font-size: 5vh;
+}
+} */
+
+/* @media screen and (max-width: 690px) { */
+/* .hero {
     background-position: center;
   } */
-  .hero h1 {
-    bottom: 15%;
-  }
-  .hero p {
+/* .hero h1 {
+    bottom: 5%;
+  } */
+/* .hero p {
     top: 80%;
     right: 50%;
     transform: translateX(50%);
@@ -240,8 +246,12 @@ a {
     color: var(--light-primary);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 5px;
-  }
-}
+  } 
+}*/
+
+/* .hero figure {
+  height: clamp(75%, 80%, 90%);
+} */
 
 /* PageNav ---------- */
 .pagenav .placeholder {

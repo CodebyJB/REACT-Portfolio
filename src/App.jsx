@@ -12,7 +12,7 @@ import AnimatedCursor from "react-animated-cursor";
 
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: false, disable: "mobile" });
+    AOS.init({ duration: 2000, once: false, disable: "mobile" });
   }, []);
 
   return (
